@@ -1,0 +1,28 @@
+﻿@model LibrarieModele.Product
+
+<h2>Delete Product</h2>
+
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Product_Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Product_Name)
+    </dd>
+
+    <!-- Add other fields as needed -->
+
+</dl>
+
+@using (Html.BeginForm("Delete", "Home", new { id = Model.Product_Id }, FormMethod.Post, new { @class = "delete-form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <!-- Pass necessary data as hidden fields -->
+    @Html.HiddenFor(model => model.Product_Id)
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+}
+
+<!-- Add a separate cancel button outside the form -->
+<a href="@Url.Action("Index", "Home")" class="btn btn-default">Cancel</a>

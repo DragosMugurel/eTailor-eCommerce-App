@@ -1,0 +1,52 @@
+﻿/* Add some spacing and center the content */
+.body-content {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Improve readability of horizontal description lists */
+.dl-horizontal dt {
+    font-weight: bold;
+    color: #28a745; /* Change the color for emphasis */
+}
+
+/* Style form input elements */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Style buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+    .btn:hover {
+        background-color: #218838;
+        border: 1px solid #218838;
+        color: #ffffff;
+    }
+
+/* Add a footer */
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<LibrarieModele.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product List</h2>
+
+@foreach (var categoryGroup in Model.GroupBy(p => p.Category_Name))
+{
+    <h3>@categoryGroup.Key</h3>
+    <ul>
+        @foreach (var product in categoryGroup)
+        {
+            <li>
+                <strong>Product Name:</strong> @product.Product_Name<br />
+                <strong>Description:</strong> @product.Description<br />
+                <strong>Price:</strong> @product.Price<br />
+                <strong>Popularity:</strong> @product.Popularity<br />
+                <strong>Category ID:</strong> @product.Category_Id<br /> <!-- Display Category ID -->
+                <!-- Display product image -->
+                <img src="@product.Image_URL" alt="@product.Product_Name" width="100" height="100" />
+
+                <!-- Links for CRUD actions -->
+                @Html.ActionLink("Details", "Details", new { id = product.Product_Id }) |
+                @Html.ActionLink("Edit", "Edit", new { id = product.Product_Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = product.Product_Id }, new { onclick = "return confirm('Are you sure you want to delete this item?');" })
+            </li>
+        }
+    </ul>
+}
+
+<h2>Add New Product</h2>
+
+@using (Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    <!-- Use editor templates for common form fields -->
+    @Html.EditorForModel()
+
+    <div>
+        <input type="submit" value="Add Product" />
+    </div>
+}
