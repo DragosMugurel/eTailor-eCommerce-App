@@ -163,9 +163,6 @@ namespace eTailorViewModel.Controllers
             }
         }
 
-
-        // GET: Home/Details/1
-        [HttpGet]
         public ActionResult Details(int id)
         {
             try
