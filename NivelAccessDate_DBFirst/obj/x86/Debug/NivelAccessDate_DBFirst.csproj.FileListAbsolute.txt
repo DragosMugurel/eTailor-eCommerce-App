@@ -1,0 +1,12 @@
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\NivelAccessDate_DBFirst.dll.config
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\NivelAccessDate_DBFirst.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\NivelAccessDate_DBFirst.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\Repository_DBFirst.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\EntityFramework.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\Repository_DBFirst.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\bin\x86\Debug\EntityFramework.xml
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\obj\x86\Debug\NivelAccessDate_DBFirst.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\obj\x86\Debug\NivelAccessDate_DBFirst.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\obj\x86\Debug\NivelAccessDate_DBFirst.csproj.CopyComplete
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\obj\x86\Debug\NivelAccessDate_DBFirst.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\NivelAccessDate_DBFirst\obj\x86\Debug\NivelAccessDate_DBFirst.pdb

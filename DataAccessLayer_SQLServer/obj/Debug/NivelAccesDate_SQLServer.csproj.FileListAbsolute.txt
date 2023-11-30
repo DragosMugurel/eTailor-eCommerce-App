@@ -1,0 +1,29 @@
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.dll
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.pdb
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.dll
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.pdb
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.AssemblyReference.cache
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.CoreCompileInputs.cache
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.CopyComplete
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate.dll
+D:\Desktop\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.CopyComplete
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.dll.config
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\NivelAccesDate.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\bin\Debug\LibrarieModele.dll.config
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate_SQLServer.csproj.CopyComplete
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\DataAccessLayer_SQLServer\obj\Debug\NivelAccesDate.pdb

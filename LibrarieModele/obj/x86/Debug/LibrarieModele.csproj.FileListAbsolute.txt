@@ -1,0 +1,24 @@
+D:\MEGA\Master anul 1\PPAW\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\AplicatieDemo_ArhitecturiMultiTier\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.CopyComplete
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\x86\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.csproj.CopyComplete
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\x86\Debug\LibrarieModele.pdb
