@@ -29,8 +29,6 @@ namespace NivelAccesDate_DBFirst
         public void AddProduct(LibrarieModele.Product newProduct)
         {
                     var repositoryProduct = MapToRepositoryModel(newProduct);
-
-                    // Attach the entity if it's in a detached state
                     if (dbContext.Entry(repositoryProduct).State == EntityState.Detached)
                     {
                         dbContext.Products.Attach(repositoryProduct);
@@ -66,14 +64,10 @@ namespace NivelAccesDate_DBFirst
 
                 if (existingProduct != null)
                 {
-                    // Check if the entity is attached
                     if (dbContext.Entry(existingProduct).State == EntityState.Detached)
                     {
-                        // Attach the entity to the context
                         dbContext.Products.Attach(existingProduct);
                     }
-
-                    // Remove the entity
                     dbContext.Products.Remove(existingProduct);
                     dbContext.SaveChanges();
                 }
