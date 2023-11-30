@@ -85,11 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.cs" />
-    <Compile Include="Companie.cs" />
     <Compile Include="Interfaces\IStocareCategories.cs" />
-    <Compile Include="Interfaces\IStocareCompanii.cs" />
     <Compile Include="Interfaces\IStocareFactory.cs" />
-    <Compile Include="Interfaces\IStocareMasini.cs" />
     <Compile Include="Interfaces\IStocareOrders.cs" />
     <Compile Include="Interfaces\IStocareOrdersHistory.cs" />
     <Compile Include="Interfaces\IStocarePayments.cs" />
@@ -97,7 +94,6 @@
     <Compile Include="Interfaces\IStocareRecommendations.cs" />
     <Compile Include="Interfaces\IStocareShippings.cs" />
     <Compile Include="Interfaces\IStocareUsers.cs" />
-    <Compile Include="Masina.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Order_History.cs" />
     <Compile Include="Payment.cs" />

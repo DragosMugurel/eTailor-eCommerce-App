@@ -60,8 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministrareCategories.cs" />
-    <Compile Include="AdministrareMasini.cs" />
-    <Compile Include="AdministrareCompanii.cs" />
     <Compile Include="AdministrareOrders.cs" />
     <Compile Include="AdministrareOrdersHistory.cs" />
     <Compile Include="AdministrarePayments.cs" />

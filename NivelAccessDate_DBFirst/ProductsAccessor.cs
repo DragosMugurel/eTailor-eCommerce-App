@@ -1,9 +1,11 @@
 ﻿using Repository_DBFirst;
+
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
+using System.Linq;
 
 namespace NivelAccesDate_DBFirst
 {
@@ -13,118 +15,70 @@ namespace NivelAccesDate_DBFirst
 
         public ProductsAccessor(eTailorEntities dbContext)
         {
-            this.dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            this.dbContext = dbContext;
         }
 
         public List<LibrarieModele.Product> GetProductsList()
         {
-            try
-            {
                 var products = dbContext.Products
                     .Select(MapToLibrarieModel)
                     .ToList();
 
                 DisplayCollection(products);
                 return products;
-            }
-            catch (Exception ex)
-            {
-                LogError(ex, "GetProductsList");
-                throw;
-            }
-        }
 
+        }
         public void AddProduct(LibrarieModele.Product newProduct)
         {
-            try
-            {
-                var repositoryProduct = MapToRepositoryModel(newProduct);
-                dbContext.Products.Add(repositoryProduct);
-                dbContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                LogError(ex, "AddProduct");
-                throw;
-            }
+                    var repositoryProduct = MapToRepositoryModel(newProduct);
+
+                    // Attach the entity if it's in a detached state
+                    if (dbContext.Entry(repositoryProduct).State == EntityState.Detached)
+                    {
+                        dbContext.Products.Attach(repositoryProduct);
+                    }
+
+                    dbContext.Products.Add(repositoryProduct);
+                    dbContext.SaveChanges();
         }
 
-        public LibrarieModele.Product GetProductById(int productId)
+
+
+        public LibrarieModele.Product GetProductById(int product_id)
         {
-            try
-            {
                 var product = dbContext.Products
-                    .Where(p => p.product_id == productId)
+                    .Where(p => p.product_id == product_id)
                     .Select(MapToLibrarieModel)
                     .FirstOrDefault();
-
                 return product;
-            }
-            catch (Exception ex)
-            {
-                LogError(ex, "GetProductById");
-                throw;
-            }
         }
 
         public void UpdateProduct(LibrarieModele.Product updatedProduct)
         {
-            try
-            {
+
                 var existingProduct = dbContext.Products.Find(updatedProduct.Product_Id) ?? throw new Exception("The product does not exist.");
-
-                // Update the existing product with the new values
                 UpdateRepositoryModel(existingProduct, updatedProduct);
-
                 dbContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                LogError(ex, "UpdateProduct");
-                throw;
-            }
+            
         }
 
         public void DeleteProduct(LibrarieModele.Product product)
         {
-            try
-            {
-                var repositoryProduct = MapToRepositoryModel(product);
+                var existingProduct = dbContext.Products.Find(product.Product_Id);
 
-                // Attach the entity to the context
-                dbContext.Products.Attach(repositoryProduct);
+                if (existingProduct != null)
+                {
+                    // Check if the entity is attached
+                    if (dbContext.Entry(existingProduct).State == EntityState.Detached)
+                    {
+                        // Attach the entity to the context
+                        dbContext.Products.Attach(existingProduct);
+                    }
 
-                // Set the entity state to Deleted
-                dbContext.Entry(repositoryProduct).State = EntityState.Deleted;
-
-                // Save changes to apply the deletion
-                dbContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                LogError(ex, "DeleteProduct");
-                throw;
-            }
-        }
-
-
-        public void SaveChanges()
-        {
-            try
-            {
-                dbContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                LogError(ex, "SaveChanges");
-                throw;
-            }
-        }
-
-        private void LogError(Exception ex, string methodName)
-        {
-            Trace.TraceError($"Error in {nameof(ProductsAccessor)}.{methodName}: {ex}");
-            Trace.TraceError($"Stack Trace: {ex.StackTrace}");
+                    // Remove the entity
+                    dbContext.Products.Remove(existingProduct);
+                    dbContext.SaveChanges();
+                }
         }
 
         private void DisplayCollection<T>(List<T> collection)
@@ -151,6 +105,7 @@ namespace NivelAccesDate_DBFirst
         {
             return new Product
             {
+                product_id = p.Product_Id,
                 product_name = p.Product_Name,
                 description = p.Description,
                 price = p.Price,
@@ -163,6 +118,7 @@ namespace NivelAccesDate_DBFirst
 
         private void UpdateRepositoryModel(Product existingProduct, LibrarieModele.Product updatedProduct)
         {
+            existingProduct.product_id = updatedProduct.Product_Id;
             existingProduct.product_name = updatedProduct.Product_Name;
             existingProduct.description = updatedProduct.Description;
             existingProduct.price = updatedProduct.Price;

@@ -8,7 +8,6 @@ namespace LibrarieModele
     {
         [Key]
         public int Product_Id { get; set; }
-        [Required]
         public string Product_Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }

@@ -15,21 +15,15 @@ namespace eTailorViewModel.Controllers
         public HomeController()
         {
             var dbContext = new eTailorEntities();
-            this.productsAccessor = new ProductsAccessor(dbContext);
+            productsAccessor = new ProductsAccessor(dbContext);
         }
-
-
 
         private ActionResult HandleException(Exception ex, string actionName)
         {
-            // Log the exception using System.Diagnostics.Trace
             Trace.TraceError($"Error in HomeController/{actionName}: {ex}");
-
-            // Return a custom error view
             return View("Error");
         }
 
-        // GET: Products
         public ActionResult Index()
         {
             try
@@ -43,117 +37,69 @@ namespace eTailorViewModel.Controllers
             }
         }
 
+        [HttpPost]
+        public ActionResult Index(LibrarieModele.Product model)
+        {
+            if (model is null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
         // POST: Products/Create
         [HttpPost]
         public ActionResult Create(LibrarieModele.Product model)
         {
-            if (!ModelState.IsValid)
+            if (model is null)
             {
-                return View(model);
+                throw new ArgumentNullException(nameof(model));
             }
 
-            try
-            {
-                productsAccessor.AddProduct(model);
-                productsAccessor.SaveChanges();
-
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                // Log the exception details and add the exception message to the ModelState
-                LogAndAddModelError(ex, "Error in HomeController/Create");
-                return View(model);
-            }
+            productsAccessor.AddProduct(model);
+            return View("Create", model);
+            
         }
 
-        // GET: Home/Edit/1
-        [HttpGet]
+
+
         public ActionResult Edit(int id)
         {
-            try
-            {
                 var productById = productsAccessor.GetProductById(id);
-
-                if (productById == null)
-                {
-                    return HttpNotFound();
-                }
-
                 return View("Edit", productById);
-            }
-            catch (Exception ex)
-            {
-                return HandleException(ex, nameof(Edit));
-            }
         }
 
         // POST: Home/Edit/1
         [HttpPost]
         public ActionResult Edit(LibrarieModele.Product editedProduct)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(editedProduct);
-            }
-
-            try
-            {
                 var existingProduct = productsAccessor.GetProductById(editedProduct.Product_Id);
-
-                if (existingProduct == null)
-                {
-                    return HttpNotFound();
-                }
-
                 UpdateProductProperties(existingProduct, editedProduct);
                 productsAccessor.UpdateProduct(existingProduct);
-
                 return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return HandleException(ex, nameof(Edit));
-            }
+
         }
 
         // GET: Home/Delete/1
-        [HttpGet]
         public ActionResult Delete(int id)
         {
-            try
-            {
-                var existingProduct = productsAccessor.GetProductById(id);
-
-                if (existingProduct == null)
-                {
-                    return HttpNotFound();
-                }
-
-                return View(existingProduct);
-            }
-            catch (Exception ex)
-            {
-                return HandleException(ex, nameof(Delete));
-            }
+            var existingProduct = productsAccessor.GetProductById(id);
+            return View(existingProduct);
         }
+
 
         // POST: Home/DeleteConfirmed/1
         [HttpPost]
+        [ActionName("DeleteConfirmed")]
+        [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             try
             {
                 var existingProduct = productsAccessor.GetProductById(id);
-
-                if (existingProduct == null)
-                {
-                    return HttpNotFound();
-                }
-
-                // Delete the product
                 productsAccessor.DeleteProduct(existingProduct);
-                productsAccessor.SaveChanges();
 
                 return RedirectToAction("Index");
             }
@@ -163,29 +109,11 @@ namespace eTailorViewModel.Controllers
             }
         }
 
+
         public ActionResult Details(int id)
         {
-            try
-            {
                 var product = productsAccessor.GetProductById(id);
-
-                if (product == null)
-                {
-                    return HttpNotFound();
-                }
-
                 return View(product);
-            }
-            catch (Exception ex)
-            {
-                return HandleException(ex, nameof(Details));
-            }
-        }
-
-        private void LogAndAddModelError(Exception ex, string logMessage)
-        {
-            Trace.TraceError($"{logMessage}: {ex}");
-            ModelState.AddModelError(string.Empty, ex.Message);
         }
 
         private void UpdateProductProperties(LibrarieModele.Product existingProduct, LibrarieModele.Product editedProduct)

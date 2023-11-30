@@ -14,14 +14,15 @@
 
 </dl>
 
-@using (Html.BeginForm("Delete", "Home", new { id = Model.Product_Id }, FormMethod.Post, new { @class = "delete-form" }))
+@using (Html.BeginForm("DeleteConfirmed", "Home", new { id = Model.Product_Id }, FormMethod.Post))
 {
     @Html.AntiForgeryToken()
 
     <!-- Pass necessary data as hidden fields -->
     @Html.HiddenFor(model => model.Product_Id)
 
-    <button type="submit" class="btn btn-danger">Delete</button>
+    <!-- Alternatively, you can use a button element -->
+    <button type="submit" class="btn btn-danger" id="delete-btn">Delete</button>
 }
 
 <!-- Add a separate cancel button outside the form -->
