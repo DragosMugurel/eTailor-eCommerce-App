@@ -13,7 +13,7 @@ Highlight key features of your app. For example:
 
 ## Technologies Used
 
-- **.NET 7:** The app is built on the latest version of the .NET framework, ensuring performance and security improvements.
+- **.NET 8:** The app is built on the latest version of the .NET framework, ensuring performance and security improvements.
 - **ASP.NET Core:** Leveraging the power of ASP.NET Core for building scalable and maintainable web applications.
 - **SQL Server Management Studio (SSMS):** The database is managed using SSMS for efficient data storage and retrieval.
 
