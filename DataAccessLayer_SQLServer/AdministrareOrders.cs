@@ -16,30 +16,26 @@ namespace NivelAccesDate_SQLServer
         public List<Order> GetOrders()
         {
             var result = new List<Order>();
-            var dsOrders = SqlDBHelper.ExecuteDataSet("select * from dbo.Orders", CommandType.Text);
+            var dsOrders = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Orders", CommandType.Text);
 
             foreach (DataRow linieBD in dsOrders.Tables[PRIMUL_TABEL].Rows)
             {
                 var order = new Order(linieBD);
-                //incarca entitatile aditionale
-                //order.Category = new AdministrareOrders().GetOrder(order.Order_Id);
                 result.Add(order);
             }
             return result;
         }
 
-        public Order GetOrders(int id)
+        public Order GetOrder(int order_id)
         {
             Order result = null;
-            var dsOrders = SqlDBHelper.ExecuteDataSet("select * from dbo.Orders where Order_Id = @Order_Id", CommandType.Text,
-                new SqlParameter("@Product_Id", id));
+            var dsOrders = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Orders WHERE order_id = @order_id", CommandType.Text,
+                new SqlParameter("@order_id", order_id));
 
             if (dsOrders.Tables[PRIMUL_TABEL].Rows.Count > 0)
             {
                 DataRow linieBD = dsOrders.Tables[PRIMUL_TABEL].Rows[PRIMA_LINIE];
                 result = new Order(linieBD);
-                //incarca entitatile aditionale
-                //result.Category = new AdministrareCategorii().GetCompanie(result.Category_Id);
             }
             return result;
         }
@@ -47,28 +43,25 @@ namespace NivelAccesDate_SQLServer
         public bool AddOrder(Order o)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "insert into dbo.Orders VALUES (@Order_Id, @User_Id, @Total_Price, @Created_At, @Product_Id)", CommandType.Text,
-                new SqlParameter("@Order_Id", o.Order_Id),
-                new SqlParameter("@User_Id", o.User_Id),
-                new SqlParameter("@Total_Price", o.Total_Price),
-                new SqlParameter("@Created_At", o.Created_At),
-                new SqlParameter("@Product_Id", o.Product_Id)
+                "INSERT INTO dbo.Orders (order_id, user_id, total_price, created_at, product_id) VALUES (@order_id, @user_id, @total_price, @created_at, @product_id)", CommandType.Text,
+                new SqlParameter("@order_id", o.Order_Id),
+                new SqlParameter("@user_id", o.User_Id),
+                new SqlParameter("@total_price", o.Total_Price),
+                new SqlParameter("@created_at", o.Created_At),
+                new SqlParameter("@product_id", o.Product_Id)
             );
         }
 
         public bool UpdateOrder(Order o)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "update dbo.Orders set User_Id = @User_Id, Total_Price = @Total_Price, Created_At = @Created_At, Product_Id = @Product_Id where Order_Id = @Order_Id", CommandType.Text,
-                new SqlParameter("@Order_Id", o.Order_Id),
-                new SqlParameter("@User_Id", o.User_Id),
-                new SqlParameter("@Total_Price", o.Total_Price),
-                new SqlParameter("@Created_At", o.Created_At),
-                new SqlParameter("@Product_Id", o.Product_Id)
+                "UPDATE dbo.Orders SET user_id = @user_id, total_price = @total_price, created_at = @created_at, product_id = @product_id WHERE order_id = @order_id", CommandType.Text,
+                new SqlParameter("@order_id", o.Order_Id),
+                new SqlParameter("@user_id", o.User_Id),
+                new SqlParameter("@total_price", o.Total_Price),
+                new SqlParameter("@created_at", o.Created_At),
+                new SqlParameter("@product_id", o.Product_Id)
             );
         }
-
-
-
     }
 }

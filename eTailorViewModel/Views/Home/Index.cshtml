@@ -1,43 +1,86 @@
-﻿@model IEnumerable<LibrarieModele.Product>
+﻿@model List<LibrarieModele.Product>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Product List</h2>
+<style>
+    .product-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-@foreach (var categoryGroup in Model.GroupBy(p => p.Category_Name))
-{
-    <h3>@categoryGroup.Key</h3>
-    <ul>
-        @foreach (var product in categoryGroup)
-        {
-            <li>
-                <strong>Product Name:</strong> @product.Product_Name<br />
-                <strong>Description:</strong> @product.Description<br />
-                <strong>Price:</strong> @product.Price<br />
-                <strong>Popularity:</strong> @product.Popularity<br />
-                <strong>Category ID:</strong> @product.Category_Id<br /> <!-- Display Category ID -->
-                <!-- Display product image -->
-                <img src="@product.Image_URL" alt="@product.Product_Name" width="100" height="100" />
+    .product {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+    }
 
-                <!-- Links for CRUD actions -->
-                @Html.ActionLink("Details", "Details", new { id = product.Product_Id }) |
-                @Html.ActionLink("Edit", "Edit", new { id = product.Product_Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = product.Product_Id }, new { onclick = "return confirm('Are you sure you want to delete this item?');" })
-            </li>
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
-    </ul>
-}
+</style>
 
-<h2>Add New Product</h2>
+<div class="container mt-5">
+    <h2>Product List</h2>
 
-@using (Html.BeginForm("Create", "Home", FormMethod.Post))
-{
-    <!-- Use editor templates for common form fields -->
-    @Html.EditorForModel()
+    @foreach (var categoryGroup in Model.GroupBy(p => p.Category_Name))
+    {
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <h3>@categoryGroup.Key</h3>
+            </div>
 
-    <div>
-        <input type="submit" value="Add Product" />
-    </div>
-}
+            @foreach (var product in categoryGroup)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="@product.Image_URL" alt="@product.Product_Name" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Product_Name</h5>
+                            <p class="card-text">@product.Description</p>
+                            <p class="card-text"><strong>Price:</strong> @product.Price</p>
+                            <p class="card-text"><strong>Popularity:</strong> @product.Popularity</p>
+                            <p class="card-text"><strong>Category ID:</strong> @product.Category_Id</p>
+
+                            <div class="btn-group">
+                                @Html.ActionLink("Details", "Details", new { id = product.Product_Id }, new { @class = "btn btn-outline-primary btn-sm" })
+                                @Html.ActionLink("Edit", "Edit", new { id = product.Product_Id }, new { @class = "btn btn-outline-secondary btn-sm" })
+                                @Html.ActionLink("Delete", "Delete", new { id = product.Product_Id }, new { onclick = "return confirm('Are you sure you want to delete this item?');", @class = "btn btn-outline-danger btn-sm" })
+                            </div>
+
+                            <!-- Add to Cart Button -->
+                            @using (Html.BeginForm("AddToCart", "Home", FormMethod.Post))
+                            {
+                                @Html.Hidden("Product_Id", product.Product_Id)
+                                <button type="submit" class="btn btn-success btn-sm mt-2">Add to Cart</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p>Welcome, @User.Identity.Name! You are logged in as @User.IsInRole("Admin") ? "Admin" : "User".</p>
+    }
+
+    @using (Html.BeginForm("Create", "Home", FormMethod.Post))
+    {
+        @Html.EditorForModel()
+
+        <div>
+            <input type="submit" value="Add Product" class="btn btn-primary" />
+        </div>
+    }
+</div>

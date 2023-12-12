@@ -8,9 +8,13 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <style>
+        .motto {
+            color: #ffc107;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,6 +34,31 @@
                     <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Cart", "Cart", "Home", new { area = "" }, new { @class = "nav-link" })</li> <!-- Add Cart link -->
+                </ul>
+                <ul class="navbar-nav">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Logout", "Logout", "Admin", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Cart", "Cart", "Home", new { area = "" }, new { @class = "nav-link" }) <!-- Move Cart link here -->
+                        </li>
+                        <li class="nav-item" id="user-info" style="margin-left: 10px;">
+                            <span>Welcome, @User.Identity.Name</span>
+                            <span>(@string.Join(",", Roles.GetRolesForUser()))</span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Login", "Login", "Admin", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Cart", "Cart", "Home", new { area = "" }, new { @class = "nav-link" }) <!-- Move Cart link here -->
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
@@ -38,7 +67,6 @@
         @RenderBody()
     </div>
 
-    <!-- Bootstrap and jQuery JS -->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

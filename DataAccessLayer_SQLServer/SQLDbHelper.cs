@@ -5,9 +5,6 @@ using System.Data.SqlClient;
 
 namespace NivelAccesDate_SQLServer
 {
-    /// <summary>
-    /// contine metode generice de interogare, respectiv actualizare a bazei de date
-    /// </summary>
     public static class SqlDBHelper
     {
         private const int EROARE_LA_EXECUTIE = 0;
@@ -25,13 +22,6 @@ namespace NivelAccesDate_SQLServer
             }
         }
 
-        /// <summary>
-        /// executa o instructiune de tip SELECT
-        /// </summary>
-        /// <param name="sql"></param>
-        /// <param name="cmdType"></param>
-        /// <param name="parameters"></param>
-        /// <returns>returneaza valorile primite ca un obiect generic de tip 'DataSet'</returns>
         public static DataSet ExecuteDataSet(string sql, CommandType cmdType, params SqlParameter[] parameters)
         {
             using (DataSet ds = new DataSet())
@@ -40,10 +30,7 @@ namespace NivelAccesDate_SQLServer
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.CommandType = cmdType;
-                    foreach (var item in parameters)
-                    {
-                        cmd.Parameters.Add(item);
-                    }
+                    cmd.Parameters.AddRange(parameters);
 
                     try
                     {
@@ -51,45 +38,47 @@ namespace NivelAccesDate_SQLServer
                     }
                     catch (SqlException ex)
                     {
-                        //salveaza exceptii in fisiere log
+                        LogException(ex, sql, parameters);
                     }
                     return ds;
                 }
             }
         }
 
-        /// <summary>
-        /// executa instructiuni INSERT/UPDATE/DELETE
-        /// </summary>
-        /// <param name="sql"></param>
-        /// <param name="cmdType"></param>
-        /// <param name="parameters"></param>
-        /// <returns> returneaza 'true' daca instructiunea a fost executata cu success</returns>
         public static bool ExecuteNonQuery(string sql, CommandType cmdType, params SqlParameter[] parameters)
         {
-            int rezult = EROARE_LA_EXECUTIE;
+            int result = EROARE_LA_EXECUTIE;
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.CommandType = cmdType;
-                    foreach (var item in parameters)
-                    {
-                        cmd.Parameters.Add(item);
-                    }
+                    cmd.Parameters.AddRange(parameters);
 
                     try
                     {
                         cmd.Connection.Open();
-                        rezult = cmd.ExecuteNonQuery();
+                        result = cmd.ExecuteNonQuery();
                     }
                     catch (SqlException ex)
                     {
-                        //salveaza exceptii in fisiere log
+                        LogException(ex, sql, parameters);
                     }
                 }
             }
-            return Convert.ToBoolean(rezult);
+            return result != EROARE_LA_EXECUTIE;
+        }
+
+        private static void LogException(SqlException ex, string sql, SqlParameter[] parameters)
+        {
+            // Log or handle the exception, you can customize this based on your logging requirements
+            Console.WriteLine($"SQL Exception occurred: {ex.Message}");
+            Console.WriteLine($"SQL Query: {sql}");
+
+            foreach (var parameter in parameters)
+            {
+                Console.WriteLine($"Parameter: {parameter.ParameterName}, Value: {parameter.Value}");
+            }
         }
     }
 }

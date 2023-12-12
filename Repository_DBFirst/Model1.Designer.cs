@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\Repository_DBFirst\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\Repository_DBFirst\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

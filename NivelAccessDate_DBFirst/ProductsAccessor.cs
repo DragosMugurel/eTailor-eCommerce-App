@@ -18,59 +18,79 @@ namespace NivelAccesDate_DBFirst
 
         public List<LibrarieModele.Product> GetProductsList()
         {
-                var products = dbContext.Products
-                    .Select(MapToLibrarieModel)
-                    .ToList();
+            var products = dbContext.Products
+                .Select(MapToLibrarieModel)
+                .ToList();
 
-                DisplayCollection(products);
-                return products;
-
+            DisplayCollection(products);
+            return products;
         }
+        public List<LibrarieModele.Product> GetProductsInCart(List<int> productIds)
+        {
+            var productsInCart = dbContext.Products
+                .Where(p => productIds.Contains(p.product_id))
+                .Select(MapToLibrarieModel)
+                .ToList();
+
+            DisplayCollection(productsInCart);
+            return productsInCart;
+        }
+
+        private void AttachOrAddEntity(Product entity)
+        {
+            if (dbContext.Entry(entity).State == EntityState.Detached)
+            {
+                dbContext.Products.Add(entity); // Add the entity if it's detached
+            }
+            else
+            {
+                dbContext.Products.Attach(entity); // Attach the entity if it's not detached
+                dbContext.Entry(entity).State = EntityState.Modified; // Mark it as modified
+            }
+        }
+
         public void AddProduct(LibrarieModele.Product newProduct)
         {
-                    var repositoryProduct = MapToRepositoryModel(newProduct);
-                    if (dbContext.Entry(repositoryProduct).State == EntityState.Detached)
-                    {
-                        dbContext.Products.Attach(repositoryProduct);
-                    }
+            // Map to repository model
+            var repositoryProduct = MapToRepositoryModel(newProduct);
 
-                    dbContext.Products.Add(repositoryProduct);
-                    dbContext.SaveChanges();
+            // Use the AttachOrAddEntity method
+            AttachOrAddEntity(repositoryProduct);
+
+            dbContext.SaveChanges(); // Save changes to the database
         }
 
 
 
         public LibrarieModele.Product GetProductById(int product_id)
         {
-                var product = dbContext.Products
-                    .Where(p => p.product_id == product_id)
-                    .Select(MapToLibrarieModel)
-                    .FirstOrDefault();
-                return product;
+            var product = dbContext.Products
+                .Where(p => p.product_id == product_id)
+                .Select(MapToLibrarieModel)
+                .FirstOrDefault();
+            return product;
         }
 
         public void UpdateProduct(LibrarieModele.Product updatedProduct)
         {
-
-                var existingProduct = dbContext.Products.Find(updatedProduct.Product_Id) ?? throw new Exception("The product does not exist.");
-                UpdateRepositoryModel(existingProduct, updatedProduct);
-                dbContext.SaveChanges();
-            
+            var existingProduct = dbContext.Products.Find(updatedProduct.Product_Id);
+            UpdateRepositoryModel(existingProduct, updatedProduct);
+            dbContext.SaveChanges();
         }
 
         public void DeleteProduct(LibrarieModele.Product product)
         {
-                var existingProduct = dbContext.Products.Find(product.Product_Id);
+            var existingProduct = dbContext.Products.Find(product.Product_Id);
 
-                if (existingProduct != null)
+            if (existingProduct != null)
+            {
+                if (dbContext.Entry(existingProduct).State == EntityState.Detached)
                 {
-                    if (dbContext.Entry(existingProduct).State == EntityState.Detached)
-                    {
-                        dbContext.Products.Attach(existingProduct);
-                    }
-                    dbContext.Products.Remove(existingProduct);
-                    dbContext.SaveChanges();
+                    dbContext.Products.Attach(existingProduct);
                 }
+                dbContext.Products.Remove(existingProduct);
+                dbContext.SaveChanges();
+            }
         }
 
         private void DisplayCollection<T>(List<T> collection)
@@ -119,5 +139,6 @@ namespace NivelAccesDate_DBFirst
             existingProduct.category_name = updatedProduct.Category_Name;
             existingProduct.popularity = updatedProduct.Popularity;
         }
+
     }
 }

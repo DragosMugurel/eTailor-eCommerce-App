@@ -16,7 +16,7 @@ namespace NivelAccesDate_SQLServer
         public List<Payment> GetPayments()
         {
             var result = new List<Payment>();
-            var dsPayments = SqlDBHelper.ExecuteDataSet("select * from dbo.Payments", CommandType.Text);
+            var dsPayments = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Payments", CommandType.Text);
 
             foreach (DataRow linieDB in dsPayments.Tables[PRIMUL_TABEL].Rows)
             {
@@ -25,11 +25,11 @@ namespace NivelAccesDate_SQLServer
             return result;
         }
 
-        public Payment GetPayment(int id)
+        public Payment GetPayment(int payment_id)
         {
             Payment result = null;
-            var dsPayments = SqlDBHelper.ExecuteDataSet("select * from dbo.Payments where Payment_Id = @Payment_Id", CommandType.Text,
-                new SqlParameter("@Payment_Id", id));
+            var dsPayments = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Payments WHERE payment_id = @payment_id", CommandType.Text,
+                new SqlParameter("@payment_id", payment_id));
 
             if (dsPayments.Tables[PRIMUL_TABEL].Rows.Count > 0)
             {
@@ -42,23 +42,21 @@ namespace NivelAccesDate_SQLServer
         public bool AddPayment(Payment pay)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "INSERT INTO dbo.Payments VALUES (@Payment_Id, @Order_Id, @Payment_Date, @Payment_Method)", CommandType.Text,
-                new SqlParameter("@Payment_Id", pay.Payment_Id),
-                new SqlParameter("@Order_Id", pay.Order_Id),
-                new SqlParameter("@Payment_Date", pay.Payment_Date),
-                new SqlParameter("@Payment_Method", pay.Payment_Method));
+                "INSERT INTO dbo.Payments (payment_id, order_id, payment_date, payment_method) VALUES (@payment_id, @order_id, @payment_date, @payment_method)", CommandType.Text,
+                new SqlParameter("@payment_id", pay.Payment_Id),
+                new SqlParameter("@order_id", pay.Order_Id),
+                new SqlParameter("@payment_date", pay.Payment_Date),
+                new SqlParameter("@payment_method", pay.Payment_Method));
         }
 
         public bool UpdatePayment(Payment pay)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "UPDATE dbo.Payments set Order_Id = @Order_Id, Payment_Date = @Payment_Date, Payment_Method = @Payment_Method where Payment_Id = @Payment_Id", CommandType.Text,
-                new SqlParameter("@Payment_Id", pay.Payment_Id),
-                new SqlParameter("@Order_Id", pay.Order_Id),
-                new SqlParameter("@Payment_Date", pay.Payment_Date),
-                new SqlParameter("@Payment_Method", pay.Payment_Method));
+                "UPDATE dbo.Payments SET order_id = @order_id, payment_date = @payment_date, payment_method = @payment_method WHERE payment_id = @payment_id", CommandType.Text,
+                new SqlParameter("@payment_id", pay.Payment_Id),
+                new SqlParameter("@order_id", pay.Order_Id),
+                new SqlParameter("@payment_date", pay.Payment_Date),
+                new SqlParameter("@payment_method", pay.Payment_Method));
         }
-
-
     }
 }

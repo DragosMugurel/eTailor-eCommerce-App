@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\nivelaccessdate_dbfirst\\productsaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|solutionrelative:nivelaccessdate_dbfirst\\productsaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6E862E5-D713-48FC-9183-C9C4716A5E9A}|eTailorViewModel\\eTailorViewModel.csproj|d:\\mega\\master anul 1\\ppaw\\etailor .net7\\aplicatiedemo_arhitecturimultitier\\etailorviewmodel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6E862E5-D713-48FC-9183-C9C4716A5E9A}|eTailorViewModel\\eTailorViewModel.csproj|solutionrelative:etailorviewmodel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6E862E5-D713-48FC-9183-C9C4716A5E9A}|eTailorViewModel\\eTailorViewModel.csproj|D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\etailorviewmodel\\views\\home\\about\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6E862E5-D713-48FC-9183-C9C4716A5E9A}|eTailorViewModel\\eTailorViewModel.csproj|solutionrelative:etailorviewmodel\\views\\home\\about\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,44 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsAccessor.cs",
-              "DocumentMoniker": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\ProductsAccessor.cs",
-              "RelativeDocumentMoniker": "NivelAccessDate_DBFirst\\ProductsAccessor.cs",
-              "ToolTip": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\ProductsAccessor.cs",
-              "RelativeToolTip": "NivelAccessDate_DBFirst\\ProductsAccessor.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAIwHMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-26T08:04:39.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\eTailorViewModel\\Views\\Home\\About\\About.cshtml",
-              "RelativeDocumentMoniker": "eTailorViewModel\\Views\\Home\\About\\About.cshtml",
-              "ToolTip": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\eTailorViewModel\\Views\\Home\\About\\About.cshtml",
-              "RelativeToolTip": "eTailorViewModel\\Views\\Home\\About\\About.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2023-11-28T16:42:47.71Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\eTailorViewModel\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "eTailorViewModel\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\MEGA\\Master anul 1\\PPAW\\eTailor .NET7\\AplicatieDemo_ArhitecturiMultiTier\\eTailorViewModel\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "eTailorViewModel\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-27T11:43:11.903Z",
-              "EditorCaption": ""
             }
           ]
         }

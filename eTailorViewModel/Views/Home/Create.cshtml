@@ -14,7 +14,7 @@
         @Html.LabelFor(model => model.Product_Name, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.TextBoxFor(model => model.Product_Name, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Product_Name, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Product_Name)
         </div>
     </div>
 
@@ -22,15 +22,15 @@
         @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Description)
         </div>
     </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.Price, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Price, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(model => model.Price, new { @class = "form-control", type = "number" })
+            @Html.ValidationMessageFor(model => model.Price)
         </div>
     </div>
 
@@ -38,7 +38,7 @@
         @Html.LabelFor(model => model.Image_URL, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.TextBoxFor(model => model.Image_URL, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Image_URL, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Image_URL)
         </div>
     </div>
 
@@ -46,27 +46,25 @@
         @Html.LabelFor(model => model.Category_Name, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.TextBoxFor(model => model.Category_Name, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Category_Name, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Category_Name)
         </div>
     </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.Popularity, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Popularity, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Popularity, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(model => model.Popularity, new { @class = "form-control", type = "number" })
+            @Html.ValidationMessageFor(model => model.Popularity)
         </div>
     </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.Category_Id, new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Category_Id, new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.Category_Id, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(model => model.Category_Id, new { @class = "form-control", type = "number" })
+            @Html.ValidationMessageFor(model => model.Category_Id)
         </div>
     </div>
-
-    <!-- Additional form fields using editor templates or other helpers -->
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
@@ -75,5 +73,4 @@
     </div>
 }
 
-@* Optional: Add a link to navigate back to the product list *@
 @Html.ActionLink("Back to Product List", "Index", null, new { @class = "btn btn-default" })

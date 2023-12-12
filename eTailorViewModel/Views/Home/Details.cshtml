@@ -11,10 +11,8 @@
     <strong>Description:</strong> @Model.Description<br />
     <strong>Price:</strong> @Model.Price<br />
 
-    <!-- Display product image -->
     <img src="@Model.Image_URL" alt="@Model.Product_Name" width="200" height="200" />
 
-    <!-- Add more details as needed -->
 
     <p>
         @Html.ActionLink("Edit", "Edit", new { id = Model.Product_Id }) |

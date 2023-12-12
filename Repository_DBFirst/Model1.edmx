@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="category_id" />
           </Key>
-          <Property Name="category_id" Type="int" Nullable="false" />
+          <Property Name="category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="category_name" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
@@ -36,7 +36,7 @@ warning 6002: The table/view 'eTailor.dbo.Order_history' does not have a primary
           <Key>
             <PropertyRef Name="order_id" />
           </Key>
-          <Property Name="order_id" Type="int" Nullable="false" />
+          <Property Name="order_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="customer_id" Type="int" Nullable="false" />
           <Property Name="total_price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="created_at" Type="datetime" Nullable="false" />
@@ -46,7 +46,7 @@ warning 6002: The table/view 'eTailor.dbo.Order_history' does not have a primary
           <Key>
             <PropertyRef Name="payment_id" />
           </Key>
-          <Property Name="payment_id" Type="int" Nullable="false" />
+          <Property Name="payment_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="order_id" Type="int" Nullable="false" />
           <Property Name="payment_date" Type="datetime" Nullable="false" />
           <Property Name="payment_method" Type="varchar" MaxLength="30" Nullable="false" />
@@ -55,7 +55,7 @@ warning 6002: The table/view 'eTailor.dbo.Order_history' does not have a primary
           <Key>
             <PropertyRef Name="product_id" />
           </Key>
-          <Property Name="product_id" Type="int" Nullable="false" />
+          <Property Name="product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="product_name" Type="varchar(max)" Nullable="false" />
           <Property Name="description" Type="text" Nullable="false" />
           <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
@@ -68,7 +68,7 @@ warning 6002: The table/view 'eTailor.dbo.Order_history' does not have a primary
           <Key>
             <PropertyRef Name="recommended_product_id" />
           </Key>
-          <Property Name="recommended_product_id" Type="int" Nullable="false" />
+          <Property Name="recommended_product_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="user_id" Type="int" Nullable="false" />
           <Property Name="score" Type="float" Nullable="false" />
           <Property Name="product_id" Type="int" Nullable="false" />
@@ -77,7 +77,7 @@ warning 6002: The table/view 'eTailor.dbo.Order_history' does not have a primary
           <Key>
             <PropertyRef Name="shipping_id" />
           </Key>
-          <Property Name="shipping_id" Type="int" Nullable="false" />
+          <Property Name="shipping_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="order_id" Type="int" Nullable="false" />
           <Property Name="shipping_date" Type="datetime" Nullable="false" />
           <Property Name="shipping_address" Type="varchar(max)" Nullable="false" />
@@ -86,7 +86,7 @@ warning 6002: The table/view 'eTailor.dbo.Order_history' does not have a primary
           <Key>
             <PropertyRef Name="user_id" />
           </Key>
-          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="first_name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="last_name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="email" Type="varchar" MaxLength="120" Nullable="false" />

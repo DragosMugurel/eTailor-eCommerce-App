@@ -16,30 +16,26 @@ namespace NivelAccesDate_SQLServer
         public List<Recommendation> GetRecommendations()
         {
             var result = new List<Recommendation>();
-            var dsRecommendations = SqlDBHelper.ExecuteDataSet("select * from dbo.Recommendations", CommandType.Text);
+            var dsRecommendations = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Recommendations", CommandType.Text);
 
             foreach (DataRow linieBD in dsRecommendations.Tables[PRIMUL_TABEL].Rows)
             {
                 var recommendation = new Recommendation(linieBD);
-                //incarca entitatile aditionale
-                //recommendation.Category = new AdministrareCategories().GetCategory(recommendation.Category_Id);
                 result.Add(recommendation);
             }
             return result;
         }
 
-        public Recommendation GetRecommendation(int id)
+        public Recommendation GetRecommendation(int recommended_product_id)
         {
             Recommendation result = null;
-            var dsRecommendations = SqlDBHelper.ExecuteDataSet("select * from dbo.Recommendations where Recommended_Product_Id = @Recommended_Product_Id", CommandType.Text,
-                new SqlParameter("@Recommended_Product_Id", id));
+            var dsRecommendations = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Recommendations WHERE recommended_product_id = @recommended_product_id", CommandType.Text,
+                new SqlParameter("@recommended_product_id", recommended_product_id));
 
             if (dsRecommendations.Tables[PRIMUL_TABEL].Rows.Count > 0)
             {
                 DataRow linieBD = dsRecommendations.Tables[PRIMUL_TABEL].Rows[PRIMA_LINIE];
                 result = new Recommendation(linieBD);
-                //incarca entitatile aditionale
-                //result.Category = new AdministrareCategorii().GetCompanie(result.Category_Id);
             }
             return result;
         }
@@ -47,23 +43,21 @@ namespace NivelAccesDate_SQLServer
         public bool AddRecommendation(Recommendation r)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "insert into dbo.Recommendations VALUES (@Recommended_Product_Id, @User_Id, @Product_Id, @Score)", CommandType.Text,
-                new SqlParameter("@Recommended_Product_Id", r.Recommended_Product_Id),
-                new SqlParameter("@User_Id", r.User_Id),
-                new SqlParameter("@Product_Id", r.Product_Id),
-                new SqlParameter("@Score", r.Score));
+                "INSERT INTO dbo.Recommendations (recommended_product_id, user_id, product_id, score) VALUES (@recommended_product_id, @user_id, @product_id, @score)", CommandType.Text,
+                new SqlParameter("@recommended_product_id", r.Recommended_Product_Id),
+                new SqlParameter("@user_id", r.User_Id),
+                new SqlParameter("@product_id", r.Product_Id),
+                new SqlParameter("@score", r.Score));
         }
 
         public bool UpdateRecommendation(Recommendation r)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "update dbo.Recommendations set Recommended_Product_Id = @Recommended_Product_Id, User_Id = @User_Id, Product_Id = @Product_Id, Score = @Score where Recommended_Product_Id = @Recommended_Product_Id", CommandType.Text,
-                new SqlParameter("@Recommended_Product_Id", r.Recommended_Product_Id),
-                new SqlParameter("@User_Id", r.User_Id),
-                new SqlParameter("@Product_Id", r.Product_Id),
-                new SqlParameter("@Score", r.Score));
+                "UPDATE dbo.Recommendations SET user_id = @user_id, product_id = @product_id, score = @score WHERE recommended_product_id = @recommended_product_id", CommandType.Text,
+                new SqlParameter("@recommended_product_id", r.Recommended_Product_Id),
+                new SqlParameter("@user_id", r.User_Id),
+                new SqlParameter("@product_id", r.Product_Id),
+                new SqlParameter("@score", r.Score));
         }
-
     }
-
 }

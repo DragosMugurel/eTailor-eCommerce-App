@@ -7,7 +7,7 @@ namespace LibrarieModele_Interfete
     public interface IStocareOrders : IStocareFactory
     {
         List<Order> GetOrders();
-        Order GetOrders(int id);
+        Order GetOrder(int id);
         bool AddOrder(Order o);
 
         bool UpdateOrder(Order o);

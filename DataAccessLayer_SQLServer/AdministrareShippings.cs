@@ -16,30 +16,26 @@ namespace NivelAccesDate_SQLServer
         public List<Shipping> GetShippings()
         {
             var result = new List<Shipping>();
-            var dsShipping = SqlDBHelper.ExecuteDataSet("select * from dbo.Shipping", CommandType.Text);
+            var dsShipping = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Shipping", CommandType.Text);
 
             foreach (DataRow linieBD in dsShipping.Tables[PRIMUL_TABEL].Rows)
             {
                 var shipping = new Shipping(linieBD);
-                //incarca entitatile aditionale
-                //order.Category = new AdministrareOrders().GetOrder(order.Order_Id);
                 result.Add(shipping);
             }
             return result;
         }
 
-        public Shipping GetShipping(int id)
+        public Shipping GetShipping(int shipping_id)
         {
             Shipping result = null;
-            var dsShipping = SqlDBHelper.ExecuteDataSet("select * from dbo.Shipping where Shipping_Id = @Shipping_Id", CommandType.Text,
-                new SqlParameter("@Shipping_Id", id));
+            var dsShipping = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Shipping WHERE shipping_id = @shipping_id", CommandType.Text,
+                new SqlParameter("@shipping_id", shipping_id));
 
             if (dsShipping.Tables[PRIMUL_TABEL].Rows.Count > 0)
             {
                 DataRow linieBD = dsShipping.Tables[PRIMUL_TABEL].Rows[PRIMA_LINIE];
                 result = new Shipping(linieBD);
-                //incarca entitatile aditionale
-                //result.Category = new AdministrareCategorii().GetCompanie(result.Category_Id);
             }
             return result;
         }
@@ -47,28 +43,23 @@ namespace NivelAccesDate_SQLServer
         public bool AddShipping(Shipping sh)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "insert into dbo.Shipping VALUES (@Shipping_Id, @Order_Id, @Shipping_Date, @Shipping_Address)", CommandType.Text,
-                new SqlParameter("@Shipping_Id", sh.Shipping_Id),
-                new SqlParameter("@Order_Id", sh.Order_Id),
-                new SqlParameter("@Shipping_Date", sh.Shipping_Date),
-                new SqlParameter("@Shipping_Address", sh.Shipping_Address)
+                "INSERT INTO dbo.Shipping (shipping_id, order_id, shipping_date, shipping_address) VALUES (@shipping_id, @order_id, @shipping_date, @shipping_address)", CommandType.Text,
+                new SqlParameter("@shipping_id", sh.Shipping_Id),
+                new SqlParameter("@order_id", sh.Order_Id),
+                new SqlParameter("@shipping_date", sh.Shipping_Date),
+                new SqlParameter("@shipping_address", sh.Shipping_Address)
             );
         }
 
         public bool UpdateShipping(Shipping sh)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "update dbo.Shipping set Order_Id = @Order_Id, Shipping_Date = @Shipping Date, Shipping_Address = @Shipping_Address where Shipping_Id = @Shipping_Id", CommandType.Text,
-                new SqlParameter("@Shipping_Id", sh.Shipping_Id),
-                new SqlParameter("@Order_Id", sh.Order_Id),
-                new SqlParameter("@Shipping_Date", sh.Shipping_Date),
-                new SqlParameter("@Shipping_Address", sh.Shipping_Address)
+                "UPDATE dbo.Shipping SET order_id = @order_id, shipping_date = @shipping_date, shipping_address = @shipping_address WHERE shipping_id = @shipping_id", CommandType.Text,
+                new SqlParameter("@shipping_id", sh.Shipping_Id),
+                new SqlParameter("@order_id", sh.Order_Id),
+                new SqlParameter("@shipping_date", sh.Shipping_Date),
+                new SqlParameter("@shipping_address", sh.Shipping_Address)
             );
         }
-
-
-
-
-
     }
 }

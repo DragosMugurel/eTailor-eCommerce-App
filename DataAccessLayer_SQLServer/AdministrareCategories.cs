@@ -16,7 +16,7 @@ namespace NivelAccesDate_SQLServer
         public List<Category> GetCategories()
         {
             var result = new List<Category>();
-            var dsCategories = SqlDBHelper.ExecuteDataSet("select * from dbo.Categories", CommandType.Text);
+            var dsCategories = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Categories", CommandType.Text);
 
             foreach (DataRow linieDB in dsCategories.Tables[PRIMUL_TABEL].Rows)
             {
@@ -25,11 +25,11 @@ namespace NivelAccesDate_SQLServer
             return result;
         }
 
-        public Category GetCategory(int id)
+        public Category GetCategory(int category_id)
         {
             Category result = null;
-            var dsCategories = SqlDBHelper.ExecuteDataSet("select * from dbo.Categories where Category_Id = @Category_Id", CommandType.Text,
-                new SqlParameter("@Category_Id", id));
+            var dsCategories = SqlDBHelper.ExecuteDataSet("SELECT * FROM dbo.Categories WHERE category_id = @category_id", CommandType.Text,
+                new SqlParameter("@category_id", category_id));
 
             if (dsCategories.Tables[PRIMUL_TABEL].Rows.Count > 0)
             {
@@ -42,17 +42,17 @@ namespace NivelAccesDate_SQLServer
         public bool AddCategory(Category cat)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "INSERT INTO dbo.Categories VALUES (@Category_Id, @Category_Name)", CommandType.Text,
-                new SqlParameter("@Category_Id", cat.Category_Id),
-                new SqlParameter("@Category_Name", cat.Category_Name));
+                "INSERT INTO dbo.Categories (category_id, category_name) VALUES (@category_id, @category_name)", CommandType.Text,
+                new SqlParameter("@category_id", cat.Category_Id),
+                new SqlParameter("@category_name", cat.Category_Name));
         }
 
         public bool UpdateCategory(Category cat)
         {
             return SqlDBHelper.ExecuteNonQuery(
-                "UPDATE dbo.Categories set Category_Id = @Category_Id, Category_Name = @Category_Name where Category_Id = @Category_Id", CommandType.Text,
-                new SqlParameter("@Category_Id", cat.Category_Id),
-                new SqlParameter("@Category_Name", cat.Category_Name));
+                "UPDATE dbo.Categories SET category_name = @category_name WHERE category_id = @category_id", CommandType.Text,
+                new SqlParameter("@category_id", cat.Category_Id),
+                new SqlParameter("@category_name", cat.Category_Name));
         }
 
     }

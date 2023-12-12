@@ -1,6 +1,6 @@
-﻿/* Add some spacing and center the content */
+﻿/* Center and add spacing to the content */
 .body-content {
-    margin-top: 50px;
+    margin: 50px auto;
     padding: 20px;
     text-align: center;
 }
@@ -12,9 +12,7 @@
 }
 
 /* Style form input elements */
-input,
-select,
-textarea {
+input, select, textarea {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -32,21 +30,19 @@ textarea {
     border: 1px solid #28a745;
     border-radius: 5px;
     background-color: #28a745;
-    color: #ffffff;
+    color: #fff;
 }
 
     .btn:hover {
         background-color: #218838;
-        border: 1px solid #218838;
-        color: #ffffff;
+        border-color: #218838;
     }
 
 /* Add a footer */
 footer {
     margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     background-color: #343a40;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
 }

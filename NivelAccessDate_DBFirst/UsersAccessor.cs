@@ -12,14 +12,19 @@ namespace NivelAccesDate_DBFirst
 
         public UsersAccessor(eTailorEntities dbContext)
         {
-            context = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            context = dbContext;
         }
 
         public void DisplayUsers()
         {
-            Console.WriteLine("--- Users ---");
             var users = context.Users.ToList();
             DisplayCollection(users, Console.WriteLine);
+        }
+
+        public bool LoginUser(string email, string password, string userType)
+        {
+            var user = context.Users.FirstOrDefault(u => u.email == email && u.password == password && u.user_type == userType);
+            return user != null;
         }
 
         private void DisplayCollection<T>(IEnumerable<T> collection, Action<T> displayAction)

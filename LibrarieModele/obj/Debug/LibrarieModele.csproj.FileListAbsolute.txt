@@ -13,3 +13,49 @@ D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieMo
 D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.CopyComplete
 D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.dll
 D:\MEGA\Master anul 1\PPAW\eTailor\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\LibrarieModele.dll.config
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\LibrarieModele.pdb
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Helpers.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Mvc.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Razor.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Razor.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Helpers.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Mvc.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Razor.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Razor.xml
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.AssemblyReference.cache
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.CopyComplete
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.dll
+D:\MEGA\Master anul 1\PPAW\eTailor .NET7\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.pdb
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\LibrarieModele.dll.config
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\LibrarieModele.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\LibrarieModele.pdb
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Helpers.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Mvc.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Razor.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Razor.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Helpers.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Mvc.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.Razor.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\bin\Debug\System.Web.WebPages.Razor.xml
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.AssemblyReference.cache
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.csproj.CopyComplete
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\LibrarieModele\obj\Debug\LibrarieModele.pdb

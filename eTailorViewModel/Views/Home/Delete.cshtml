@@ -10,20 +10,15 @@
         @Html.DisplayFor(model => model.Product_Name)
     </dd>
 
-    <!-- Add other fields as needed -->
-
 </dl>
 
 @using (Html.BeginForm("DeleteConfirmed", "Home", new { id = Model.Product_Id }, FormMethod.Post))
 {
     @Html.AntiForgeryToken()
 
-    <!-- Pass necessary data as hidden fields -->
     @Html.HiddenFor(model => model.Product_Id)
 
-    <!-- Alternatively, you can use a button element -->
     <button type="submit" class="btn btn-danger" id="delete-btn">Delete</button>
 }
 
-<!-- Add a separate cancel button outside the form -->
 <a href="@Url.Action("Index", "Home")" class="btn btn-default">Cancel</a>
