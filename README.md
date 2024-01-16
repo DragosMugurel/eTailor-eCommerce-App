@@ -3,8 +3,6 @@
 Welcome to the eTailor eCommerce app! This project is built using .NET 7, ASP.NET Core, and utilizes a SQL Server Management Studio (SSMS) database.
 
 ## Features
-
-Highlight key features of your app. For example:
 - User authentication and authorization
 - Product catalog and browsing
 - Shopping cart functionality
