@@ -8,7 +8,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LibrarieModele</RootNamespace>
     <AssemblyName>LibrarieModele</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>preview</LangVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -89,18 +90,12 @@
     <Compile Include="Interfaces\IStocareFactory.cs" />
     <Compile Include="Interfaces\IStocareOrders.cs" />
     <Compile Include="Interfaces\IStocareOrdersHistory.cs" />
-    <Compile Include="Interfaces\IStocarePayments.cs" />
     <Compile Include="Interfaces\IStocareProducts.cs" />
-    <Compile Include="Interfaces\IStocareRecommendations.cs" />
-    <Compile Include="Interfaces\IStocareShippings.cs" />
     <Compile Include="Interfaces\IStocareUsers.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Order_History.cs" />
-    <Compile Include="Payment.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recommendation.cs" />
-    <Compile Include="Shipping.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

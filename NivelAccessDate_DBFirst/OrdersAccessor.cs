@@ -8,9 +8,9 @@ namespace NivelAccesDate_DBFirst
 {
     public class OrdersAccessor
     {
-        private readonly eTailorEntities context;
+        private readonly ETailorEntities context;
 
-        public OrdersAccessor(eTailorEntities dbContext)
+        public OrdersAccessor(ETailorEntities dbContext)
         {
             context = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
         }

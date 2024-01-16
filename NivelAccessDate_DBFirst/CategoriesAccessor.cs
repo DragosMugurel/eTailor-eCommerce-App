@@ -1,4 +1,6 @@
-﻿using Repository_DBFirst;
+﻿using NivelAccessDate_DBFirst.Interfaces;
+
+using Repository_DBFirst;
 
 using System;
 using System.Collections.Generic;
@@ -6,29 +8,76 @@ using System.Linq;
 
 namespace NivelAccesDate_DBFirst
 {
-    public class CategoriesAccessor
+    public class CategoriesAccessor(ETailorEntities _db) : ICategoriesAccessor
     {
-        private readonly eTailorEntities context;
+        private readonly ETailorEntities _db = _db;
 
-        public CategoriesAccessor(eTailorEntities dbContext)
+        public List<LibrarieModele.Category> GetCategories()
         {
-            context = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            return _db.Categories.Select(MapToLibrarieModel).ToList();
         }
 
-        public void DisplayCategories()
+        public LibrarieModele.Category GetCategoryById(int categoryId)
         {
-            Console.WriteLine("--- Categories ---");
-            var categories = context.Categories.ToList();
-            DisplayCollection(categories, Console.WriteLine);
-            Console.WriteLine(categories.FirstOrDefault()?.category_name);
+            var repositoryCategory = _db.Categories.Find(categoryId);
+            return repositoryCategory != null ? MapToLibrarieModel(repositoryCategory) : null;
         }
 
-        private void DisplayCollection<T>(IEnumerable<T> collection, Action<T> displayAction)
+        public void UpdateCategory(LibrarieModele.Category updatedCategory)
         {
-            foreach (var item in collection)
+            var existingCategory = _db.Categories.Find(updatedCategory.Category_Id);
+            if (existingCategory != null)
             {
-                displayAction(item);
+                UpdateRepositoryModel(existingCategory, updatedCategory);
+                _db.SaveChanges();
             }
+            else
+            {
+                Console.WriteLine($"Category with ID {updatedCategory.Category_Id} not found.");
+            }
+        }
+
+        public void DeleteCategory(LibrarieModele.Category category)
+        {
+            var existingCategory = _db.Categories.Find(category.Category_Id);
+
+            if (existingCategory != null)
+            {
+                _db.Categories.Remove(existingCategory);
+                _db.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine($"Category with ID {category.Category_Id} not found.");
+            }
+        }
+
+        public void AddCategory(LibrarieModele.Category newCategory)
+        {
+            var repositoryCategory = MapToRepositoryModel(newCategory);
+            _db.Categories.Add(repositoryCategory);
+            _db.SaveChanges();
+        }
+
+        private LibrarieModele.Category MapToLibrarieModel(Repository_DBFirst.Category repositoryCategory)
+        {
+            return repositoryCategory != null ? new LibrarieModele.Category
+            {
+                Category_Id = repositoryCategory.category_id
+            } : null;
+        }
+
+        private void UpdateRepositoryModel(Category existingCategory, LibrarieModele.Category updatedCategory)
+        {
+            existingCategory.category_id = updatedCategory.Category_Id;
+        }
+
+        private Category MapToRepositoryModel(LibrarieModele.Category category)
+        {
+            return category != null ? new Category
+            {
+                category_id = category.Category_Id
+            } : null;
         }
     }
 }

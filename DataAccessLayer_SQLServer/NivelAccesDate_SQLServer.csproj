@@ -8,7 +8,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NivelAccesDate</RootNamespace>
     <AssemblyName>NivelAccesDate</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>preview</LangVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -62,10 +63,7 @@
     <Compile Include="AdministrareCategories.cs" />
     <Compile Include="AdministrareOrders.cs" />
     <Compile Include="AdministrareOrdersHistory.cs" />
-    <Compile Include="AdministrarePayments.cs" />
     <Compile Include="AdministrareProducts.cs" />
-    <Compile Include="AdministrareRecommendations.cs" />
-    <Compile Include="AdministrareShippings.cs" />
     <Compile Include="AdministrareUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLDbHelper.cs" />
@@ -77,6 +75,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

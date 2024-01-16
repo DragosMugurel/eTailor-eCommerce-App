@@ -6,14 +6,9 @@ using System.Linq;
 
 namespace NivelAccesDate_DBFirst
 {
-    public class OrdersHistoryAccessor
+    public class OrdersHistoryAccessor(ETailorEntities dbContext)
     {
-        private readonly eTailorEntities context;
-
-        public OrdersHistoryAccessor(eTailorEntities dbContext)
-        {
-            context = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
-        }
+        private readonly ETailorEntities context = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
 
         public void DisplayOrdersHistory()
         {

@@ -13,10 +13,10 @@ namespace Repository_DBFirst
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class eTailorEntities : DbContext
+    public partial class ETailorEntities : DbContext
     {
-        public eTailorEntities()
-            : base("name=eTailorEntities")
+        public ETailorEntities()
+            : base("name=ETailorEntities")
         {
         }
     
@@ -27,10 +27,7 @@ namespace Repository_DBFirst
     
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Payment> Payments { get; set; }
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Recommendation> Recommendations { get; set; }
-        public virtual DbSet<Shipping> Shippings { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Order_history> Order_history { get; set; }
     }

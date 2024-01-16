@@ -8,9 +8,9 @@ namespace NivelAccesDate_DBFirst
 {
     public class UsersAccessor
     {
-        private readonly eTailorEntities context;
+        private readonly ETailorEntities context;
 
-        public UsersAccessor(eTailorEntities dbContext)
+        public UsersAccessor(ETailorEntities dbContext)
         {
             context = dbContext;
         }
@@ -21,9 +21,9 @@ namespace NivelAccesDate_DBFirst
             DisplayCollection(users, Console.WriteLine);
         }
 
-        public bool LoginUser(string email, string password, string userType)
+        public bool LoginUser(string email, string password)
         {
-            var user = context.Users.FirstOrDefault(u => u.email == email && u.password == password && u.user_type == userType);
+            var user = context.Users.FirstOrDefault(u => u.email == email && u.password == password);
             return user != null;
         }
 

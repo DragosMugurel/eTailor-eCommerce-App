@@ -50,8 +50,8 @@ namespace NivelAccesDate_SQLServer
                 new SqlParameter("@price", p.Price),
                 new SqlParameter("@image_url", p.Image_URL),
                 new SqlParameter("@category_id", p.Category_Id),
-                new SqlParameter("@popularity", p.Popularity)
-            );
+                new SqlParameter("category_name", p.Category_Name)
+            ) ;
         }
 
         public bool UpdateProduct(Product p)
@@ -64,7 +64,7 @@ namespace NivelAccesDate_SQLServer
                 new SqlParameter("@price", p.Price),
                 new SqlParameter("@image_url", p.Image_URL),
                 new SqlParameter("@category_id", p.Category_Id),
-                new SqlParameter("@popularity", p.Popularity)
+                new SqlParameter("category_name", p.Category_Name)
             );
         }
     }

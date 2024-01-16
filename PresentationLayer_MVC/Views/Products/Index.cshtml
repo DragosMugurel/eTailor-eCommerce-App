@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PresentationLayer_MVC.Models.ProductViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container">
+    <h2>Product List</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Product_Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                    <th>@Html.DisplayNameFor(model => model.Price)</th>
+                    <th>@Html.DisplayNameFor(model => model.Image_URL)</th>
+                    <th>@Html.DisplayNameFor(model => model.Category_Name)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => product.Product_Name)</td>
+                        <td>@Html.DisplayFor(modelItem => product.Description)</td>
+                        <td>@Html.DisplayFor(modelItem => product.Price)</td>
+                        <td>
+                            <img src="@product.Image_URL" alt="Product Image" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => product.Category_Name)</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = product.Product_Id }, new { @class = "btn btn-warning btn-sm" }) |
+                            @Html.ActionLink("Details", "Details", new { id = product.Product_Id }, new { @class = "btn btn-info btn-sm" }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = product.Product_Id }, new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>

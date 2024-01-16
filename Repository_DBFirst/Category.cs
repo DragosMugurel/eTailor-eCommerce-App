@@ -21,8 +21,9 @@ namespace Repository_DBFirst
         }
     
         public int category_id { get; set; }
-        public string category_name { get; set; }
     
+        public virtual Category Categories1 { get; set; }
+        public virtual Category Category1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Products { get; set; }
     }

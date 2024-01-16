@@ -1,0 +1,58 @@
+﻿@model IEnumerable<DomainModels.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Product_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Image_URL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Category_Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => product.Product_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.Price)
+            </td>
+            <td>
+                <img src="@product.Image_URL" alt="Product Image" style="max-width: 100px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.Category_Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = product.Product_Id }) |
+                @Html.ActionLink("Details", "Details", new { id = product.Product_Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = product.Product_Id })
+            </td>
+        </tr>
+    }
+</table>

@@ -1,7 +1,80 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|d:\\mega\\master\\ppaw\\etailor .net 8\\aplicatiedemo_arhitecturimultitier\\presentationlayer_mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\nivelaccessdate_dbfirst\\productsaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|solutionrelative:nivelaccessdate_dbfirst\\productsaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\presentationlayer_mvc\\infrastructure\\containerconfigurer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C46741-659F-4DC0-9A8A-28C0DC9E06EB}|PresentationLayer_MVC\\PresentationLayer_MVC.csproj|solutionrelative:presentationlayer_mvc\\infrastructure\\containerconfigurer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\nivelaccessdate_dbfirst\\categoriesaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|solutionrelative:nivelaccessdate_dbfirst\\categoriesaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\nivelaccessdate_dbfirst\\usersaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|solutionrelative:nivelaccessdate_dbfirst\\usersaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A468BE5-C3B3-4D70-9A48-59A08E84DB96}|LibrarieModele\\LibrarieModele.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\librariemodele\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A468BE5-C3B3-4D70-9A48-59A08E84DB96}|LibrarieModele\\LibrarieModele.csproj|solutionrelative:librariemodele\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\nivelaccessdate_dbfirst\\interfaces\\iproductsaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A6D8BF9-EB6D-4F0D-B237-62CB77EEBC02}|NivelAccessDate_DBFirst\\NivelAccessDate_DBFirst.csproj|solutionrelative:nivelaccessdate_dbfirst\\interfaces\\iproductsaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,15 +90,228 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "PresentationLayer_MVC\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAkwCAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-16T09:22:39.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PresentationLayer_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-16T09:29:42.274Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "PresentationLayer_MVC\\Views\\Products\\Create.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAqwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-16T09:21:37.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "PresentationLayer_MVC\\Views\\Products\\Details.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-16T09:21:56.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "PresentationLayer_MVC\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-16T09:21:24.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "PresentationLayer_MVC\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAYwMcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-15T15:29:47.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsAccessor.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\ProductsAccessor.cs",
+              "RelativeDocumentMoniker": "NivelAccessDate_DBFirst\\ProductsAccessor.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\ProductsAccessor.cs",
+              "RelativeToolTip": "NivelAccessDate_DBFirst\\ProductsAccessor.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAADwv0AAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T11:55:24.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\packages.config",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\packages.config",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\packages.config",
+              "RelativeToolTip": "PresentationLayer_MVC\\packages.config",
+              "ViewState": "AQIAAAwAAABwNDMzM5MwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-01-16T14:05:05.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "PresentationLayer_MVC\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-16T13:50:56.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Web.config",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Web.config",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Web.config",
+              "RelativeToolTip": "PresentationLayer_MVC\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-01-16T13:19:43.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PresentationLayer_MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwBkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T12:54:57.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "PresentationLayer_MVC\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-15T14:58:26.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ContainerConfigurer.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Infrastructure\\ContainerConfigurer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Infrastructure\\ContainerConfigurer.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Infrastructure\\ContainerConfigurer.cs",
+              "RelativeToolTip": "PresentationLayer_MVC\\Infrastructure\\ContainerConfigurer.cs",
+              "ViewState": "AQIAAAwAAAAANTMzM7MRwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T12:51:17.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "PresentationLayer_MVC\\Models\\ProductViewModel.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\PresentationLayer_MVC\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "PresentationLayer_MVC\\Models\\ProductViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T09:43:14.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsersAccessor.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\UsersAccessor.cs",
+              "RelativeDocumentMoniker": "NivelAccessDate_DBFirst\\UsersAccessor.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\UsersAccessor.cs",
+              "RelativeToolTip": "NivelAccessDate_DBFirst\\UsersAccessor.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T12:25:24.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\LibrarieModele\\Product.cs",
+              "RelativeDocumentMoniker": "LibrarieModele\\Product.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\LibrarieModele\\Product.cs",
+              "RelativeToolTip": "LibrarieModele\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T12:03:54.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoriesAccessor.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\CategoriesAccessor.cs",
+              "RelativeDocumentMoniker": "NivelAccessDate_DBFirst\\CategoriesAccessor.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\CategoriesAccessor.cs",
+              "RelativeToolTip": "NivelAccessDate_DBFirst\\CategoriesAccessor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T11:43:41.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IProductsAccessor.cs",
+              "DocumentMoniker": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\Interfaces\\IProductsAccessor.cs",
+              "RelativeDocumentMoniker": "NivelAccessDate_DBFirst\\Interfaces\\IProductsAccessor.cs",
+              "ToolTip": "D:\\MEGA\\Master\\PPAW\\eTailor .NET 8\\AplicatieDemo_ArhitecturiMultiTier\\NivelAccessDate_DBFirst\\Interfaces\\IProductsAccessor.cs",
+              "RelativeToolTip": "NivelAccessDate_DBFirst\\Interfaces\\IProductsAccessor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T11:51:46.466Z"
             }
           ]
         }

@@ -1,73 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="eTailorModelStoreContainer" CdmEntityContainer="eTailorEntities">
+  <EntityContainerMapping StorageEntityContainer="ETailorModelStoreContainer" CdmEntityContainer="ETailorEntities">
     <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="eTailorModel.Category">
+      <EntityTypeMapping TypeName="ETailorModel.Category">
         <MappingFragment StoreEntitySet="Categories">
-          <ScalarProperty Name="category_name" ColumnName="category_name" />
           <ScalarProperty Name="category_id" ColumnName="category_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="eTailorModel.Order">
+      <EntityTypeMapping TypeName="ETailorModel.Order">
         <MappingFragment StoreEntitySet="Orders">
           <ScalarProperty Name="order_id" ColumnName="order_id" />
-          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
           <ScalarProperty Name="total_price" ColumnName="total_price" />
           <ScalarProperty Name="created_at" ColumnName="created_at" />
           <ScalarProperty Name="product_id" ColumnName="product_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Payments">
-      <EntityTypeMapping TypeName="eTailorModel.Payment">
-        <MappingFragment StoreEntitySet="Payments">
-          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
-          <ScalarProperty Name="order_id" ColumnName="order_id" />
-          <ScalarProperty Name="payment_date" ColumnName="payment_date" />
-          <ScalarProperty Name="payment_method" ColumnName="payment_method" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="eTailorModel.Product">
+      <EntityTypeMapping TypeName="ETailorModel.Product">
         <MappingFragment StoreEntitySet="Products">
-          <ScalarProperty Name="category_name" ColumnName="category_name" />
           <ScalarProperty Name="product_id" ColumnName="product_id" />
           <ScalarProperty Name="product_name" ColumnName="product_name" />
           <ScalarProperty Name="description" ColumnName="description" />
           <ScalarProperty Name="price" ColumnName="price" />
           <ScalarProperty Name="image_url" ColumnName="image_url" />
           <ScalarProperty Name="category_id" ColumnName="category_id" />
-          <ScalarProperty Name="popularity" ColumnName="popularity" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Recommendations">
-      <EntityTypeMapping TypeName="eTailorModel.Recommendation">
-        <MappingFragment StoreEntitySet="Recommendations">
-          <ScalarProperty Name="user_id" ColumnName="user_id" />
-          <ScalarProperty Name="recommended_product_id" ColumnName="recommended_product_id" />
-          <ScalarProperty Name="score" ColumnName="score" />
-          <ScalarProperty Name="product_id" ColumnName="product_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Shippings">
-      <EntityTypeMapping TypeName="eTailorModel.Shipping">
-        <MappingFragment StoreEntitySet="Shipping">
-          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
-          <ScalarProperty Name="order_id" ColumnName="order_id" />
-          <ScalarProperty Name="shipping_date" ColumnName="shipping_date" />
-          <ScalarProperty Name="shipping_address" ColumnName="shipping_address" />
+          <ScalarProperty Name="category_name" ColumnName="category_name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="eTailorModel.User">
+      <EntityTypeMapping TypeName="ETailorModel.User">
         <MappingFragment StoreEntitySet="Users">
-          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
           <ScalarProperty Name="user_id" ColumnName="user_id" />
           <ScalarProperty Name="first_name" ColumnName="first_name" />
           <ScalarProperty Name="last_name" ColumnName="last_name" />
@@ -75,17 +42,15 @@
           <ScalarProperty Name="password" ColumnName="password" />
           <ScalarProperty Name="address" ColumnName="address" />
           <ScalarProperty Name="city" ColumnName="city" />
-          <ScalarProperty Name="postal_code" ColumnName="postal_code" />
           <ScalarProperty Name="country" ColumnName="country" />
-          <ScalarProperty Name="user_type" ColumnName="user_type" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Order_history">
-      <EntityTypeMapping TypeName="eTailorModel.Order_history">
+      <EntityTypeMapping TypeName="ETailorModel.Order_history">
         <MappingFragment StoreEntitySet="Order_history">
           <ScalarProperty Name="order_id" ColumnName="order_id" />
-          <ScalarProperty Name="transaction_id" ColumnName="transaction_id" />
           <ScalarProperty Name="quantity" ColumnName="quantity" />
           <ScalarProperty Name="price" ColumnName="price" />
           <ScalarProperty Name="total_price" ColumnName="total_price" />

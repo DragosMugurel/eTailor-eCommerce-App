@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="featuredProductsTitle">
+        <h1 id="featuredProductsTitle">Featured Products</h1>
+        <p class="lead">Discover our latest and greatest products that are just a click away.</p>
+        <p><a href="/products" class="btn btn-primary btn-md">Explore Products &raquo;</a></p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="newArrivalsTitle">
+            <h2 id="newArrivalsTitle">New Arrivals</h2>
+            <p>Check out our newest additions to the collection.</p>
+            <p><a class="btn btn-outline-dark" href="/products/new">View New Arrivals &raquo;</a></p>
+        </section>
+        <section class="col-md-4" aria-labelledby="bestSellersTitle">
+            <h2 id="bestSellersTitle">Best Sellers</h2>
+            <p>Explore our top-rated and most loved products.</p>
+            <p><a class="btn btn-outline-dark" href="/products/best-sellers">See Best Sellers &raquo;</a></p>
+        </section>
+        <section class="col-md-4" aria-labelledby="discountsTitle">
+            <h2 id="discountsTitle">Special Discounts</h2>
+            <p>Save big with our limited-time offers and discounts.</p>
+            <p><a class="btn btn-outline-dark" href="/products/discounts">Check Discounts &raquo;</a></p>
+        </section>
+    </div>
+</main>
+
+@{
+    ViewBag.Title = "Contact";
+}
+<main aria-labelledby="contactTitle">
+    <h2 id="contactTitle">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <address>
+        Your Company Name<br />
+        Street Address<br />
+        City, Country, Zip Code<br />
+        <abbr title="Phone">P:</abbr>
+        Your Phone Number
+    </address>
+
+    <address>
+        <strong>Email:</strong>   <a href="mailto:info@example.com">info@example.com</a><br />
+        <strong>Support:</strong> <a href="mailto:support@example.com">support@example.com</a>
+    </address>
+</main>
+
+@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Learn more about our company and the values that drive us.</p>
+</main>

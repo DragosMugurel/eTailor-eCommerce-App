@@ -15,11 +15,12 @@ namespace Repository_DBFirst
     public partial class Order_history
     {
         public int order_id { get; set; }
-        public int transaction_id { get; set; }
         public int quantity { get; set; }
         public decimal price { get; set; }
         public decimal total_price { get; set; }
         public System.DateTime order_date { get; set; }
         public string order_status { get; set; }
+    
+        public virtual Order Order { get; set; }
     }
 }

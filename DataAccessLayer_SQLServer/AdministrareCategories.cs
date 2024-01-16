@@ -43,16 +43,13 @@ namespace NivelAccesDate_SQLServer
         {
             return SqlDBHelper.ExecuteNonQuery(
                 "INSERT INTO dbo.Categories (category_id, category_name) VALUES (@category_id, @category_name)", CommandType.Text,
-                new SqlParameter("@category_id", cat.Category_Id),
-                new SqlParameter("@category_name", cat.Category_Name));
-        }
+                new SqlParameter("@category_id", cat.Category_Id));        }
 
         public bool UpdateCategory(Category cat)
         {
             return SqlDBHelper.ExecuteNonQuery(
                 "UPDATE dbo.Categories SET category_name = @category_name WHERE category_id = @category_id", CommandType.Text,
-                new SqlParameter("@category_id", cat.Category_Id),
-                new SqlParameter("@category_name", cat.Category_Name));
+                new SqlParameter("@category_id", cat.Category_Id));
         }
 
     }

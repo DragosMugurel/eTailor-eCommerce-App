@@ -1,0 +1,6 @@
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\DomainModels\bin\Debug\DomainModels.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\DomainModels\bin\Debug\DomainModels.pdb
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\DomainModels\obj\Debug\DomainModels.csproj.AssemblyReference.cache
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\DomainModels\obj\Debug\DomainModels.csproj.CoreCompileInputs.cache
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\DomainModels\obj\Debug\DomainModels.dll
+D:\MEGA\Master\PPAW\eTailor .NET 8\AplicatieDemo_ArhitecturiMultiTier\DomainModels\obj\Debug\DomainModels.pdb

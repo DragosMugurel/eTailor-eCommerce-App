@@ -14,15 +14,22 @@ namespace Repository_DBFirst
     
     public partial class Product
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Product()
+        {
+            this.Orders = new HashSet<Order>();
+        }
+    
         public int product_id { get; set; }
         public string product_name { get; set; }
         public string description { get; set; }
         public decimal price { get; set; }
         public string image_url { get; set; }
         public int category_id { get; set; }
-        public int popularity { get; set; }
         public string category_name { get; set; }
     
         public virtual Category Category { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
