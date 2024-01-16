@@ -18,7 +18,7 @@ Welcome to the eTailor eCommerce app! This project is built using .NET 7, ASP.NE
 ## Getting Started
 
 1. Clone the repository.
-2. Install required dependencies.
+2. Install required dependencies (WARNING: You need to install .NET 8 to run this code).
 3. Configure the database connection string.
 4. Run the application.
 
